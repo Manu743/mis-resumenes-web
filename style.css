@@ -391,6 +391,43 @@ img {
   margin: 0.25rem 0;
 }
 
+/* ---------- Tables ---------- */
+.content-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: 0.9375rem;
+}
+
+.content-section table th,
+.content-section table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #dee2e6;
+  text-align: left;
+  vertical-align: top;
+}
+
+.content-section table thead th {
+  background: #1A5276;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.content-section table tbody tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.content-section table tbody tr:hover {
+  background: #eaf2f8;
+}
+
+.content-section table strong {
+  color: #1A5276;
+}
+
 /* ---------- Utility ---------- */
 .text-center {
   text-align: center;
