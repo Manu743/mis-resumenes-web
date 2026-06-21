@@ -506,3 +506,82 @@ img {
     font-size: 0.8125rem;
   }
 }
+
+/* ============================================
+   PRINT / EXPORT TO PDF
+   ============================================ */
+
+.btn-export {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 1.5rem;
+}
+
+.btn-export:hover {
+  background: #1d4ed8;
+}
+
+.btn-export svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+@media print {
+  .site-header,
+  .breadcrumbs,
+  .site-footer,
+  .btn-export,
+  .back-link {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-content {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .topic-header {
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .content-section {
+    background: none;
+    box-shadow: none;
+    border: none;
+    padding: 0.5rem 0;
+    page-break-inside: avoid;
+  }
+
+  .highlight-box {
+    border: 1px solid #ddd;
+    background: #f9f9f9 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  h2 {
+    page-break-after: avoid;
+  }
+
+  h3 {
+    page-break-after: avoid;
+  }
+}
