@@ -537,6 +537,14 @@ img {
 }
 
 @media print {
+  @page {
+    margin: 15mm 10mm 15mm 10mm;
+  }
+
+  @page :first {
+    margin-top: 10mm;
+  }
+
   .site-header,
   .breadcrumbs,
   .site-footer,
